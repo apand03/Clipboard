@@ -1,0 +1,46 @@
+.addOns {
+  &__features {
+    padding-top: calc(3rem - 1.33rem);
+
+    @include breakpoint-up(large) {
+      display: flex;
+      justify-content: center;
+      gap: 0.5rem;
+    }
+
+    &__feature {
+      text-align: center;
+      &:not(:last-child) {
+        padding-bottom: 2.78rem;
+      }
+    }
+  }
+
+  &__icon {
+    font-size: 2.22rem;
+    color: $grayish-blue;
+
+    &--container {
+      display: inline-block;
+      padding-bottom: 1.8rem;
+    }
+  }
+
+  &__header--title {
+    color: $dark-grayish-blue;
+    font-weight: $fw-600;
+    padding-bottom: 1.11rem;
+    font-size: 1.1rem;
+
+    @include breakpoint-up(large) {
+      padding-bottom: 0.85rem;
+    }
+  }
+
+  &__header--subheading {
+    color: $grayish-blue;
+    font-size: 0.8rem;
+    max-width: 18rem;
+    margin-inline: auto;
+  }
+}

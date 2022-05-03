@@ -1,0 +1,59 @@
+@import "./media";
+
+.container {
+  max-width: 66.67rem;
+  margin: 0 auto;
+  padding: 0.5rem 1.44rem;
+}
+
+.title {
+  color: $dark-grayish-blue;
+  line-height: 1.4;
+  // font-weight: $fw-600;/
+}
+.subheading {
+  padding-top: 1.33rem;
+  padding-bottom: 2.22rem;
+  color: $grayish-blue;
+  font-size: 0.75rem;
+
+  @include breakpoint-up(medium) {
+    max-width: 30rem;
+    margin-inline: auto;
+  }
+}
+
+.btn {
+  padding: 1rem 3.33rem;
+  border-radius: 3rem;
+
+  &__cta {
+    color: #fff;
+    font-weight: $fw-600;
+
+    &__ios {
+      background-color: $cyan;
+    }
+
+    &__mac {
+      background-color: $light-blue;
+    }
+  }
+}
+
+.section {
+  &__top {
+    margin-top: 4.44rem;
+  }
+
+  &__title {
+    text-align: center;
+    color: $dark-grayish-blue;
+  }
+}
+
+//*Download Section
+
+.download__btn--cta--container {
+  text-align: center;
+}

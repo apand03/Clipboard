@@ -1,0 +1,36 @@
+html {
+  box-sizing: border-box;
+  font-size: 112.5%; //* 18px
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $ff-primary;
+  line-height: 1.6;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:is(.btn) {
+  display: inline-block;
+}
+
+img {
+  display: block;
+  width: 100%;
+}

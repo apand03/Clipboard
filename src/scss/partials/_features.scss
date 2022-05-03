@@ -1,0 +1,56 @@
+@import "./media";
+
+.features__main {
+  padding: 1.11rem 1.44rem;
+
+  @include breakpoint-up(large) {
+    display: flex;
+    gap: 6rem;
+  }
+
+  &--image-container {
+    padding-bottom: 2.67rem;
+
+    @include breakpoint-up(large) {
+      margin-left: -4rem;
+    }
+  }
+
+  &--details {
+    text-align: center;
+
+    @include breakpoint-up(large) {
+      text-align: left;
+    }
+  }
+}
+
+.feature__header:not(:last-child) {
+  padding-bottom: 2.67rem;
+}
+
+.feature__header {
+  &--title {
+    color: $dark-grayish-blue;
+    font-weight: $fw-600;
+    margin-bottom: 1.11rem;
+  }
+
+  &--subdetails {
+    color: $grayish-blue;
+    font-size: 0.9rem;
+    margin-inline: auto;
+    @include breakpoint-down(small) {
+      max-width: 15rem;
+    }
+    max-width: 15rem;
+
+    @include breakpoint-down(medium) {
+      max-width: 20rem;
+    }
+
+    // @include breakpoint-down(small) {
+    //   max-width: 15rem;
+    // }
+  }
+}

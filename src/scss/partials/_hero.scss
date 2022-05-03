@@ -1,0 +1,52 @@
+@import "../partials/media";
+
+.hero {
+  padding-top: 5.33rem;
+  text-align: center;
+  background-image: url("/images/bg-header-mobile.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  // background-attachment: fixed;
+  // border: 1px solid red;
+
+  @include breakpoint-up(large) {
+    background-image: url("/images/bg-header-desktop.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left 5% bottom;
+  }
+  @include breakpoint-up(medium) {
+    background-image: url("/images/bg-header-desktop.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left 5% bottom;
+  }
+}
+
+.hero__logo--container {
+  display: flex;
+  justify-content: center;
+}
+
+.hero__logo--container img {
+  height: 5.44rem;
+  width: 5.44rem;
+}
+
+.hero__banner {
+  padding-top: 3.22rem;
+}
+
+.hero__banner--cta--container {
+  @include breakpoint-up(medium) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2rem;
+  }
+}
+
+.hero__banner--cta--container .btn:not(last-child) {
+  margin-bottom: 1.11rem;
+}

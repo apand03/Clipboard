@@ -1,0 +1,24 @@
+@import "./media";
+
+.partner {
+  @include breakpoint-up(medium) {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+  @include breakpoint-up(large) {
+    gap: 5rem;
+  }
+  &__image {
+    margin-inline: auto;
+    max-width: 30%;
+    height: 40%;
+    @include breakpoint-up(large) {
+      max-width: 20%;
+      height: 20%;
+    }
+  }
+  &__image:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+}
